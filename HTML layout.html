@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<title>HTML layout</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<style>
+		.container{
+			border-style: solid;
+			border-color: black;
+			border-width: 1px;
+			max-width:95%;
+			height:1050px;
+			margin-left:2.5%;
+			margin-right:2.5%;
+			text-align:center;
+		}
+		.header{
+			border-style: solid;
+			border-color: black;
+			border-width: 3px;
+			max-width:93%;
+			height:300px;
+			margin-left: 3%;
+			margin-right: 3%;
+			margin-top:20px;
+			text-align:center;
+		}
+		.nav {
+			border-style: dashed;
+			border-color: black;
+			border-width: 1px;
+			max-width: 93%;
+			height: 100px;
+			margin-left: 3%;
+			margin-right: 3%;
+			margin-top:100px;
+			text-align:center;
+		}
+		.section {
+			border-style: solid;
+			border-color: black;
+			border-width: 1px;
+			width:60%;
+			height: 500px;
+			margin-left: 3%;
+			margin-right: 36%;
+			margin-top: 40px;
+			text-align:center;
+			float:left;
+		}
+		.aside {
+			border-style: solid;
+			border-color: black;
+			border-width: 1px;
+			max-width: 30%;
+			height: 500px;
+			margin-left: 66%;
+			margin-right: 3%;
+			margin-top: 40px;
+			text-align:center;
+		}
+		.footer {
+			border-style: groove;
+			border-color: black;
+			border-width: 1px;
+			max-width: 93%;
+			height:100px;
+			margin-left: 3%;
+			margin-right: 3%;
+			margin-top: 20px;
+			text-align:center;
+		}
+		.article {
+			border-style: dashed;
+			border-color: black;
+			border-width: 1px;
+			max-width: 89%;
+			height: 190px;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 35px;
+			text-align:center;
+		}
+		.article1 {
+			border-style: dashed;
+			border-color: black;
+			border-width: 1px;
+			max-width: 89%;
+			height: 190px;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 20px;
+			text-align:center;
+		}
+		.section1 {
+			border-style: dashed;
+			border-color: black;
+			border-width: 1px;
+			max-width: 89%;
+			height: 190px;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 80px;
+		}
+		.section2 {
+			border-style: dashed;
+			border-color: black;
+			border-width: 1px;
+			max-width: 89%;
+			height: 190px;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 20px;
+			text-align:center;
+		}
+		span {
+			color:red;
+			font-size: 30px;
+		}
+		* {
+			border:border-box;
+		}
+		.reg_form {
+			border:3px solid white;
+			max-width:100%;
+			display:flex;
+			background-color: #d0d0d0;
+			color: black;
+			font-family: 'Times New Roman', Times, serif;
+			font-size: 20px;
+		}
+
+		</style>
+	</head>
+	
+	<body>
+		<p>body</p>
+		<div class="container">
+			<p>div id:<span>"container"</span>/p>
+			<div class="header"> 
+				<p><span>header</span></p>
+				<div class="nav ">
+					<p><span>nav</span></p>
+				</div>
+			</div>
+			<div class="section ">
+				<p><span>section</span></p>
+				<div class="article">
+					<p><span>article</span></p>
+				</div>
+				<div class="article1">
+					<p><span>article</span></p>
+				</div>
+			</div>
+				<div class="aside" >
+					<div class="section1 ">
+					
+					</div>
+					<div class="section2 " >
+					</div>
+				</div>
+			<div class="footer ">
+				<p><span>footer</span></p>
+			</div>
+		</div>
+
+
+		<aside style="width: 30%;padding-left: 15px;margin-left: 15px;float: right;font-style: italic;background-color: lightgray;">
+			<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+		</aside>
+
+
+		<figure>
+			<img src="images/img_pic_trulli.jpg" alt="Trulli" style="max-width:100%; height:auto">
+			<figcaption> &#9830; Fig1. - <mark> &#9827;Trulli</mark>,	&#9829;	 Puglia, &#9824; Italy.</figcaption>
+		</figure>
+
+		<p style="text-align:center;font-size:30px;"> <b><i><u>Registration Form</u></i></b></p>
+		<div class="reg_form">
+		  <form name="registeration_form" action="/action_page.php" target="_blank" method="post" autocomplete="on">
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" size="50"><br>
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname"><br>
+			<label for="Nickname">Nick Name:</label>
+			<input type="text" id="nickname" name="nickname"><br>
+			<label for="email">E Mail:</label>
+			<input type="email" id="email" name="email"><br>
+			<label for="pass">Password:</label>
+			<input type="password" id="pass" name="pass"><br>	
+			<label for="dob">Date Of Birth:</label>
+			<input type="date" id="dob" name="dob" max="2050-12-31" min="1951-01-01"> <br>
+			<label for="gender">Gender:</label><br>
+			<input type="radio" id="male" name="gender" value="Male">
+			<label for="male" style="margin:0">Male</label>
+			<input type="radio" id="femlae" name="gender" value="Female">
+			<label for="Female" style="margin:0">Female</label>
+			<input type="radio" id="others" name="gender" value="Others">
+			<label for="others" style="margin:0">Others</label><br>
+			<label for="mobile_no">Mobile No:</label>
+			<input type="number" id="mobile_no" name="mobile_no" maxlength="11"><br>
+			<label for="address">Address: </label>
+			<textarea name="address" style="width:200px; height:200px;"></textarea><br>
+			<label for="fav_language"> Favorite language:</label><br>
+			<input type="radio" id="html" name="fav_language" value="HTML">
+  			<label for="html">HTML</label><br>
+ 			<input type="radio" id="css" name="fav_language" value="CSS">
+ 			<label for="css">CSS</label><br>
+ 			<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+ 			<label for="javascript">JavaScript</label><br>
+			<input type="submit" value="Submit">
+			<input type="reset" value="reset">
+		  </form>
+		</div>
+		<video height="auto" width="auto" controls>
+			<source src="https://www.youtube.com/watch?v=sWBKYyh2N7c&list=RDMM&index=21" type="video/mp4"/>			
+			<source src="vidoes/maan mein vadhaya mahi.mp4" type="video/mp4"/>
+
+			Your browser doesn't support video tag.
+		</video>
+	</body>
+</html>

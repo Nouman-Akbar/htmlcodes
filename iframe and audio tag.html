@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Iframe & audio tag in HTML</title>
+		<style type="text/css">
+			.reg-form {
+				width: 80%;
+				align-self: center;
+				text-align: left;
+				margin-left: 10%;
+				margin-right: 10%;
+
+			}
+		</style>
+	</head>
+	<body>
+		<iframe src="headings.html" width="50%" height="500px" align="left"></iframe>
+		<p>
+			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus id quam elementum sagittis. Maecenas consectetur, nunc in tempor blandit, neque velit feugiat est, et interdum enim quam et risus.
+		</p>
+		<audio controls muted loop>
+			<source src="audios\meri_jan_ringtone.mp3" type="audio/mp3"/>
+		</audio>
+		<video controls width="400px" height="400px" loop poster="images/favicon.ico">
+			<source src="Videos\qaim_rahi_da_jatta.mp4" type="video/mp4">
+		</video>
+		<img src="images/html-registration-form2.png" alt="HTML registration form" width="100%" height="100%" border="2px" title="HTML Registration Form."/>
+		<div class="reg-form">
+			<form action="" method="post">
+				<fieldset>
+					<legend>Enter your personal details.</legend>
+					<h1 align="center">Registration Form</h1> <hr width="80%" align="center" col/>
+				<label>First Name:</label><br>
+					<input type="text" name="fname" width="100%" height="15px"> <br><br>
+				<label>Middle Name:</label><br>
+					<input type="text" name="mname" width="100%" height="15px"> <br><br>
+				<label>Last name</label><br>
+					<input type="text" name="lname" width="100%" height="15px"> <br><br>
+				<label>Course</label>
+						<select>
+							<option>HTMl</option>
+							<option>CSS</option>
+							<option>JS</option>
+							<option>PHP</option>
+						</select> <br><br>
+				<label>Cars</label>
+						<select>
+							<optgroup label="Toyota">
+								<option>XLI</option>
+								<option>GLI</option>
+								<option>Innovo</option>
+							</optgroup>
+							<optgroup label="Honda">
+								<option>City GMT</option>
+								<option>Aspire City</option>
+								<option>Civic</option>
+							</optgroup>
+						</select> <br><br>
+				<label>Upload a file</label>
+					<input type="file" accept="image/*"><br><br>
+				<label>Cars</label>
+						<input list="cars">
+							<datalist id="cars">
+								<option value="XLI">
+								<option value="GLI">
+								<option value="City">
+								<option value="Civic">
+								<option value="Fortune">
+								<option value="Aspire">
+								<option value="Innovo">
+								<option value="Swift">
+							</datalist><br><br>
+				<label>Gender</label> <br><br>
+					<input type="radio" name="gender" value="male">
+					<label for="gender">Male</label>&nbsp; &nbsp;
+					<input type="radio" name="gender" value="female">
+					<label for="gender">Female</label> <br><br>
+				<label>Phone No:</label> <br>
+					<input type="number" name="pno" width="100%" height="15px"><br><br>
+				<label>Address:</label><br>
+					<textarea name="address" rows="10" cols="100" width="100%" height="15px">Write your Address.</textarea><br><br>
+				<label>Email:</label> <br>
+					<input type="Email" name="email" width="100%" height="15px"> <br><br>
+				<label>Password:</label> <br>
+				<input type="password" name="pass" width="100%" height="15px"> <br><br>
+				<label>Re-type Password:</label> <br>
+				<input type="password" name="re-pass" width="100%" height="15px"> <br><br>&nbsp; &nbsp;
+				<input type="reset" value="reset" />&nbsp; &nbsp; &nbsp; &nbsp;
+				<input type="button" value="click" /><br><br><br>
+				<input type="submit" value="Register" />
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

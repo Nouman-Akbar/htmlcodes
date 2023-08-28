@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slick Slider</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css'>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+	</script>
+	<script src='https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js'></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"><!--boostrap.css-->
+    <link rel="stylesheet" type="text/css" href="ctp.css">
+	<style>
+    @font-face{
+      font-family: 'Cinzel-Regular';
+      src: url(fonts/Cinzel-Regular.woff);
+    }
+    @font-face{
+      font-family: 'Cinzel-SemiBold';
+      src: url('fonts/Cinzel-SemiBold.woff');
+    }
+    @font-face{
+      font-family: 'Montserrat-Medium';
+      src: url('fonts/Montserrat-Medium.woff');
+    }
+    @font-face{
+      font-family: 'Montserrat-Regular';
+      src: url('fonts/Montserrat-Regular.woff');
+    }
+    @font-face{
+      font-family: 'Montserrat-SemiBold';
+      src: url('fonts/Montserrat-SemiBold.woff');
+    }
+		.slick-slide {
+		height: auto!important;
+		}
+    #main{
+      overflow: hidden;
+    }
+    .testi_main{
+      box-shadow: 1px 1px 5px 1px #eee;
+    }
+    .testi_pic{
+      background: #ffb100;
+      font-family: 'Montserrat-SemiBold';
+      font-size: 55px;
+      color: #fff;
+      margin-left: -23px;
+    }
+    .testi_heading{
+      font-family: 'Montserrat-SemiBold';
+      font-size: 14px;
+      color: #143642;
+      font-weight: bold;
+      margin: 0 0 0 0;
+    }
+    .testi_para{
+      font-family: 'Montserrat-SemiBold';
+      font-size: 17px;
+      margin: 0 0 0 0;
+      line-height: 1.5;
+    }
+    .footer{
+      background: rgba(42,77,136, 1.0);
+    }
+    .footer_slider-main{
+      /*background: ur('assets/images/Info-desk-Box.png');
+      background-size: 100%;
+    */}
+      .slider{
+      padding-bottom: 4rem;
+      }
+    .footer_slider-main{
+      border: 5px solid #fff;
+    }
+    .footer_slider-main h3{
+      font-size: 16px;
+      margin: 20px 0%;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container-fluid footer pb-5">
+    <div class="row title_row py-5 text-center">
+      <h2 class="h2 section-heading text-white">INFO DESK</h2>
+    </div>
+  	<div class="row mx-5 px-5 d-flex justify-content-around slider" id="main">
+    		<div class="footer_slider-main px-3 py-3 pt-4 mx-4">
+    			<div class="inner-slider row d-flex text-center">
+            <img src="assets/images/Frequently-Asked-Questions.png" class="img-contain w-auto">
+            <h3 class="h3 text-white">Fequently Asked Questions</h3>
+    			</div>
+    		</div>
+        <div class="footer_slider-main px-3 py-3 pt-4 mx-4">
+          <div class="inner-slider row d-flex text-center">
+            <img src="assets/images/Frequently-Asked-Questions.png" class="img-contain w-auto">
+            <h3 class="h3 text-white">Fequently Asked Questions</h3>
+          </div>
+        </div>
+        <div class="footer_slider-main px-3 py-3 pt-4 mx-4">
+          <div class="inner-slider row d-flex text-center">
+            <img src="assets/images/Frequently-Asked-Questions.png" class="img-contain w-auto">
+            <h3 class="h3 text-white">Fequently Asked Questions</h3>
+          </div>
+        </div>
+        <div class="footer_slider-main px-3 py-3 pt-4 mx-4">
+          <div class="inner-slider row d-flex text-center">
+            <img src="assets/images/Frequently-Asked-Questions.png" class="img-contain w-auto">
+            <h3 class="h3 text-white">Fequently Asked Questions</h3>
+          </div>
+        </div>
+        <div class="footer_slider-main px-3 py-3 pt-4 mx-4">
+          <div class="inner-slider row d-flex text-center">
+            <img src="assets/images/Frequently-Asked-Questions.png" class="img-contain w-auto">
+            <h3 class="h3 text-white">Fequently Asked Questions</h3>
+          </div>
+        </div>
+        <div class="footer_slider-main px-3 py-3 pt-4 mx-4">
+          <div class="inner-slider row d-flex text-center">
+            <img src="assets/images/Frequently-Asked-Questions.png" class="img-contain w-auto">
+            <h3 class="h3 text-white">Fequently Asked Questions</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+	<script>
+  
+
+  $('#main').slick({
+  dots: false,
+  infinite: true,
+  arrows: true,
+  autoplay: true,
+  speed: 250,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+    
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+      }
+    }
+
+  ]
+});
+  
+  
+  $( document ).ready(function() {
+      $('.no-fouc').removeClass('no-fouc');
+  });
+  </script>
+<style>
+  .slick-prev{
+    position: absolute;
+    top: 87%;
+    left: 46%;
+    width: 35px;
+  }
+  .slick-next{
+    position: absolute;
+    top: 87%;
+    right: 47%;
+    width: 35px;
+  }
+.slick-prev::before{
+  font-family: 'slick';
+  font-size: 25px;
+  width: 25px;
+  line-height: 1;
+  opacity: .5;
+  content: url('assets/images/Left-Arrow.png');
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+.slick-next::before{
+  content: url('assets/images/Right-Arrow.png');
+  font-family: 'slick';
+  font-size: 25px;
+  line-height: 1;
+  opacity: .5;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:hover::before, .slick-next:hover::before{
+  opacity: 1.0;
+}
+.slick-slide img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+/* 
+.slick-dots {
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li button::before {
+    font-family: 'slick';
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+ 
+</style>
+
+
+
+</body>
+</html>

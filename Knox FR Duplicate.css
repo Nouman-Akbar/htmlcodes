@@ -1,0 +1,393 @@
+	
+	.main{
+			width: 100%;
+			height: auto;
+			clear: both;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		.heading{
+			width: 60%;
+			margin: 50px 20% 0 20%;
+		}
+		.heading h1, .heading p{
+			width: 40%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.heading h1{
+			font-size: 58px;
+			font-family: fantasy;
+			color: steelblue;
+			font-weight: lighter;
+			
+		}
+		.heading p{
+			font-size: 17px;
+			color: #111;
+
+		}
+		.main .box{
+			width: 32%;
+			float: left;
+			border: 1px solid darkcyan;
+			border-radius: 10px;
+			margin: 100px 5px 5px 5px;
+			height: auto;
+		}
+		.main .box .img-div{
+			width: 104px;
+			margin: 0 auto;
+			position: relative;
+			top: -55px;
+			border: 5px solid #fff;
+			margin-bottom: -40px;
+		}
+		.main .box .img-div img{
+			width: 100%;
+			border-radius: 50%;
+		}
+		.main .box .para{
+			width: 95%;
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 18px;
+			padding: 8px;
+			margin: 0 auto;
+		}
+		.main .box .title{
+			font-family: georgia;
+			
+		}
+		.main .box .title h4{
+			color: darkblue;
+			width: 30%;
+			float: left;
+			text-align: right;
+			padding:0px 10px 0px 0px;
+		}
+		.main .box .title p{
+			width: 70%;
+			text-align: left;
+			padding-top: 21px;
+			margin: 0px 0px 0px 30%;
+		}
+		.main2{
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1200px;
+			clear: both;
+		}
+		.main2 .shirtsec{
+			width: 50%;
+			float: left;
+			margin-bottom: 50px;
+		}
+
+		.main2 .shirtsec .slogan, .main2 .shirtsec .products{
+			width: 90%;
+			margin: 0 auto;
+		}
+		.main2 .shirtsec .slogan{
+			margin-top: 300px;
+		}
+		 .main2 .shirtsec .disp{
+		 	width: 60%;
+		 	margin-left:5%;
+		 }
+		.main2 .shirtsec .slogan h2{
+			font-size: 21px;
+			color: #888;
+			text-transform: uppercase;
+			line-height: 0px;
+		}
+		.main2 .shirtsec .disp h1{
+			color: #296fed;
+			font-size: 56px;
+			line-height: 55px;
+			font-weight: lighter;
+			font-family: georgia;
+		}
+		.main2 .shirtsec .products h1{
+			font-size: 25px;
+			font-kerning: ;
+			letter-spacing: 2.3px;
+			word-spacing: 5px;
+			line-height: 1.5;
+		}
+		.main2 .shirtsec .shirt{
+			width: 31.33%;
+			float: left;
+			min-height: 265px;
+			margin: 0px 1%;
+		}
+		.main2 .shirtsec .shirt p{
+			width: 90%;
+			margin: 3px auto;
+			text-align: center;
+		}
+		.main2 .shirtsec .shirt img{
+			width: 100%;
+		}
+		hr{
+			color: #ccc;
+			height: 0.5px;
+		}
+		.footer-container{
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			clear: both;
+		}
+		.footer-container .fbox{
+			width: 25%;
+			float: left;
+		}
+		.footer-container .fbox .fheading{
+			width: 75%;
+			margin: 0 auto;
+		}
+		.footer-container .fbox .fheading h2{
+			font-size: 28px;
+		}
+		.footer-container .fbox .flist{
+			width: 100%;
+			min-height: 180px;
+		}
+		.footer-container .fbox .flist ul{
+			list-style-type: none;
+		}
+		.footer-container .fbox .flist ul li{
+			margin-top: 15px;
+		}
+		.footer-container .fbox .flist ul li a{
+			text-decoration: none;
+			color: black;
+			font-size: 16px;
+			font-family: fantasy;
+		}
+		.footer-container .fbox .flist ul li a:hover{
+			text-decoration: underline;
+			cursor: pointer;
+			font-style: italic;
+		}
+		.footer-container .fbox .flist .fa-envelope{
+			font-size: 23px;
+			margin: 5px 5px 0px 0px;
+			color: black;
+		}
+		.footer-container .fbox .flist h3 a{
+			color: black;
+			text-decoration: none;
+		}
+		.footer-container .fbox .flist h3 a:hover{
+			color: #0096ff;
+			text-decoration: underline;
+			font-style: oblique;
+			font-weight: bold;
+		}
+		.footer-container .fbox .flist p{
+			text-align: center;
+			width: 85%;
+		}
+		.search-bar{
+			width: 100%;
+			float: left;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		.search-bar input{
+			width: 30%;
+			height: 40px;
+			margin: 5px 30% 10px 8%;
+			text-align: center;
+			border: 2px solid #ccc;
+			border-radius: 15px;
+		}
+		.search-bar a{
+			margin-right: 1%;
+			background: #fff;
+		}
+		.search-bar a i{
+			font-size: 20px;
+			padding: 5px;
+			border: 1px solid black;
+			border-radius: 50%;
+			text-align: center;
+		}
+
+
+
+
+
+	/*The following CSS specifies how this website is shown on mobiles or on those screens that have a width of 450px or less. 	*/
+	
+		@media only screen and (max-width: 500px){
+			.main .heading h1{
+				font-size: 30px;
+			}
+			.main .heading p{
+				font-size: 13px;
+			}
+			/*.main .box{
+				width: 95%;
+				margin: 0px auto;
+				margin-bottom: 100px;
+			}
+			.main #div1{
+				margin-top: 100px;
+			}
+			.main .box .title p{
+				margin: 0px 0px 0px 30%;
+			}*/
+			.main2 .shirtsec{
+				width: 95%;
+				margin: 0 auto;
+			}
+			.main2 .shirtsec .slogan{
+				margin-top: 20px;
+				text-align: center;
+			}
+			.main2 .shirtsec .disp{
+				width: 70%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.main2 .shirtsec .disp h1{
+				font-size: 40px;
+				line-height: .9;
+			}
+			.main2 .shirtsec .products{
+				width: 80%;
+			}
+			.main2 .shirtsec .products h1{
+				font-size: 22px;
+				letter-spacing: 1px;
+				word-spacing: 2px;
+				text-align: center;
+			}
+			.main2 .shirtsec .shirt{
+				width: 46%;
+				margin: 5px 2%;
+			}
+			hr{
+				width: 96%;
+				margin: 0 auto;
+			}
+			.footer-container .fbox{
+				width: 98%;
+				margin: 0 auto;
+			}
+			.footer-container .fbox .fheading{
+				width: 70%;
+				margin: 0 auto;
+			}
+			.footer-container .fbox .flist{
+				width: 90%;
+				margin: 0 auto;
+			}
+			.footer-container .fbox .flist li a{
+				font-style: italic;
+			}
+			.footer-container .fbox .flist h3{
+				width: 80%;
+				margin: 0 auto;
+			}
+			.footer-container .fbox .flist p{
+				width: 70%;
+				margin: 15px 20% 5px 8%;
+			}
+			.search-bar input{
+				width: 70%;
+				margin: 10px 15%;
+				float: none;
+			}
+			.search-bar a{
+				margin-right: 10%;
+			}
+			.search-bar a i{
+				font-size: 14px;
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+		/*The following CSS specifies how this website is shown on tablets or on those screens that have a width of more than 500px but less than 900px.   */
+		
+		@media only screen and (max-width:900px) and (min-width: 500px){
+			/*.main .box{
+				width: 47%;
+				margin: 100px 1%;
+			}
+			.main .box .para{
+				padding: 0px 5px;
+			}
+			.main .box .title h4{
+				padding: 0px 8px 0px 0px;
+
+			}
+			.main .box .title p{
+				margin: 0px 0px 0px 30%;
+			}
+			.main #div3{
+				margin: 0 auto;
+				margin-left: 25%;
+			}*/
+			.main2 .shirtsec{
+				width: 95%;
+				margin: 0 auto;
+			}
+			.main2 .shirtsec .slogan{
+				margin-top: 50px;
+				width: 80%;
+			}
+			.main2 .shirtsec .disp{
+				width: 60%;
+				margin: 0 auto;
+			}
+			.main2 .shirtsec .products{
+				width: 80%;
+			}
+			.main2 .shirtsec .products h1{
+				font-size: 20px;
+			}
+			.main2 .shirtsec .shirt{
+				min-height: 325px;
+			}
+			.footer-container .fbox{
+				width: 46%;
+				margin: 5px 1%;
+			}
+			hr{
+				width: 100%;
+			}
+			.footer-container .fbox .fheading{
+				width: 60%;
+				margin: 0 auto;
+			}
+			.footer-container .fbox .flist{
+				width: 80%;
+				margin: 0 auto;
+			}
+			.footer-container .fbox .flist h3{
+				width: 90%;
+				margin: 0 auto;
+			}
+			.footer-container .fbox .flist p{
+				width: 90%;
+				text-align: center;
+			}
+			.search-bar input{
+				margin-right: 5%;
+			}
+			.search-bar a{
+				margin-left: 1%;
+			}
+		}

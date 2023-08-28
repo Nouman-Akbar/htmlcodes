@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Position tag and decoration</title>
+	<style>
+		.main{
+			width: 100%;
+			font-size: 20px;
+			font-family: fantasy;
+			font-style: oblique;
+		}
+		.img{
+			width: 100%;
+		}
+		.position{
+			width: 31%;
+			position: relative;
+			display: inline-flex;
+			margin: 1%;
+		}
+		.position video{
+			width: 100%;
+			height: auto;
+			padding: 10px 0px 50% 0px;
+		}
+		.txt{
+			width: 35%;
+			position: absolute;
+			left: 35%;
+			top: 40%;
+		}
+		.txt button{
+			background: #9f7;
+			font-size: 25px;
+			border: 1px solid #9f7;
+			border-radius: 15px;
+			padding: 10px;
+		}
+		.txt button a{
+			text-decoration: none;
+			font-family: fantasy;
+		}
+		.txt button a:hover{
+			color: #12f;
+			text-decoration: underline;
+			font-family: georgia;
+			font-style: oblique;
+		}
+		.position2{
+			width: 60%;
+			height: 500px;
+			margin: 10px 20% 10px 20%;
+			position: relative;
+		}
+		.position2 video{
+			width: 100%;
+
+		}
+		.txt2{
+			width: auto;
+			position: absolute;
+			left: 35%;
+			top: 70%;
+		}
+		.txt2 button{
+			background: #9f7;
+			font-size: 25px;
+			border: 1px solid #9f7;
+			border-radius: 15px;
+			padding: 10px;
+		}
+		.txt2 button a{
+			text-decoration: none;
+			font-family: fantasy;
+		}
+		.txt2 button a:hover{
+			color: #12f;
+			text-decoration: underline;
+			font-family: georgia;
+			font-style: oblique;
+		}
+		.hover{
+			clear: both;
+			position: absolute;
+			right: 50%;
+		}
+		.hover p{
+			display: none;
+			background: greenyellow;
+		}
+		.hover:hover p{
+			display: block;
+			font-size: 22px;
+		}
+	</style> 
+</head>
+<body>
+	<div class="main">
+		<div class="img">
+				<img src="images/Img_div.jpg" alt="Img for position">
+			<div class="position">
+				<video width="100%" height="auto" controls muted loop>
+						<source src="videos/qaim_rahi_da_jatta.mp4" type="video/mp4">
+					</video>
+				<div class="txt">
+					<button><a href="#">Shop Now</a></button>
+				</div>
+			</div>
+			<div class="position">
+					<video width="100%" height="auto" autoplay muted loop>
+						<source src="videos/qaim_rahi_da_jatta.mp4" type="video/mp4">
+					</video>
+				<div class="txt">
+					<button><a href="#">Shop Now</a></button>
+				</div>
+			</div>
+			<div class="position">
+					<video width="100%" height="auto" autoplay muted loop>
+						<source src="videos/qaim_rahi_da_jatta.mp4" type="video/mp4">
+					</video>
+				<div class="txt">
+					<button><a href="#">Shop Now</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="position2">
+					<video autoplay muted loop>
+						<source src="videos/qaim_rahi_da_jatta.mp4" type="video/mp4">
+					</video>
+				<div class="txt2">
+					<button><a href="#">Shop Now</a></button>
+				</div>
+		</div>
+		<div class="hover"> what should i do now?
+			<p>lorem lorem lorem</p>
+		</div>
+	</div>
+</body>
+</html>

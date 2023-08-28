@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	<title>Div, Navigation & iframe</title>
+	<style type="text/css">
+		.main{
+			width: 100%;
+		}
+		.inner{
+			width: 100%;
+		}
+		.nav {
+			background-color:#6AFB92;
+			height: 60px;
+		}
+		.nav ul li {
+			font-family: Bell MT;
+			list-style: none;
+			float: left;
+			padding: 10px 50px 10px 50px ;
+			font-size: 30px;
+			color: white;
+		}
+		.nav ul li a{
+			color: #FFAE42;
+			text-decoration: none;
+		}
+		.nav ul li a .fa-cloud{
+			font-size: 30px;
+			margin-left: 10px;
+		}
+		.box{
+			width: 30%;
+			float: left;
+			margin: 15px;
+			border: 3px solid black;
+			border-radius: 10px 10px;
+			outline: 3px solid hotpink;
+			outline-offset: 5px;
+			margin-bottom: 30px;
+		}
+		.custom-image img{
+			width: 100%;
+		}
+		.custom-image p{
+			text-align: justify;
+		}
+		.padding{
+			padding: 20px;
+		}
+		.box2{
+			clear: both;
+			width: 100%;
+			margin-top: 20px;
+			float: right;
+			border: 1px dashed #00bfff;
+			border-radius: 5px 5px;
+			outline: 2px solid hotpink;
+			outline-offset: 5px;
+			background: #008000;}
+
+		iframe {
+			width: 100%;
+			height: 450px;
+		}
+		.box3 p{
+			color: #40E0D0;
+		}
+		.box2main{
+			width: 75%;
+			padding: 10px;
+			float: right;
+		}
+		.box3{
+			clear: both;
+			width: 20%;
+			margin-top: 30px;
+			float: left;
+			border: 1px dashed #00bfff;
+			border-radius: 5px 5px;
+			outline: 2px solid hotpink;
+			outline-offset: 5px;
+			background: #008000;
+			padding: 10px;
+		}
+		.box3 img{
+			width: 100%;
+			margin: auto;
+		}
+		.box3 p{
+			text-align: justify;
+			text-align-last: center;
+		}
+		.nav ul li a:hover{
+			color: white;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="inner">
+			<div class="nav">
+				<ul>
+					<li><a href="images/Base_logo.jpg">Home
+<i class="fas fa-cloud"></i></a></li>
+					<li>|<a href="images/img_food.jpg">Gallery<i class="fas fa-heart"></i></a></li>
+					<li>|<a href="images/img_the_scream.png">Services<i class="fas fa-car"></i></a></li>
+					<li>|<a href="Videos/Maan mein vadhaya mahi.mp4">About
+<i class="fas fa-file"></i></a></li>
+					<li>|<a href="audios/English ringtone.mp3">Contact Us
+<i class="fas fa-bars"></i></a></li>
+				</ul>
+			</div>
+			<div class="box">
+				<div class="padding">
+					<div class="custom-image">
+						<img src="images/gir.png">
+						<br>
+						<br>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui of loremficia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="padding">
+					<div class="custom-image">
+						<img src="images/img_flowers.jpg">
+						<br>
+						<br>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="padding">
+					<div class="custom-image">
+						<img src="images/img_food.jpg">
+						<br>
+						<br>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box3">
+				<img src="images/com.png">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			
+		</div>
+			<div class="box2main">
+			<div class="box2">
+				<div class="padding">
+					<iframe src="http://muhammadkhalid.com/"></iframe>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+	</div>
+</body>
+</html>

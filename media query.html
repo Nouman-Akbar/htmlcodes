@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media Query</title>
+	<style type="text/css">
+		body{
+			background: #830;
+		}
+		.main{
+			width: 70%;
+			margin: 0 auto;
+		}
+		.main img{
+			width: 100%;
+		}
+		.main h1{
+			color: red;
+			font: 30px;
+		}
+		.main p{
+			color: white;
+			background: darkcyan;
+			font: 20px;
+		}
+		@media screen and (max-width: 500px){
+			.main{
+				width: 80%;
+				margin: 0 auto;
+			}
+			.main img{
+				width: 100%;
+			}
+			.main h1{
+				color: blueviolet;
+				font: 25px;
+			}
+			.main p{
+				color: black;
+				background: grey;
+				font: 16px;
+			}
+		}
+		@media screen and (max-width: 1300px) and (min-width: 500px){
+			body{
+				background: green;
+			}
+			.main{
+				width: 80%;
+				margin: 0 auto;
+
+			}
+			.main img{
+				width: 100%;
+			}
+			.main h1{
+				color: orangered;
+				font: 25px;
+			}
+			.main p{
+				color: #ff1;
+				background: red;
+				font: 18px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+	<img src="images/Img_div.jpg" alt="Img for position">
+	<h1>Heading 1</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	
+</body>
+</html>

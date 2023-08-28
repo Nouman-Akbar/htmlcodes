@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML with Java Script</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><script src="https://kit.fontawesome.com/3f935365e0.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		ul li {
+			display: inline-flex;
+		}
+		button {
+			  background: darkcyan;
+				color: white;
+				font-family: georgia;
+				margin: 8px 13px;
+				padding: 8px 13px;
+				border: none;
+				border-radius: 20px;
+				font-size: 13px;
+				font-style: italic;
+			}
+		#para{
+			display: block;
+			font-size: 18px;
+			font-family: fantasy, sans-serif;
+		}
+		.fa-computer-mouse-scrollwheel, .fa-hexagon-check{
+			color: red;
+			background: inherit;
+			margin: 1px 0px 0px 5px;
+			font-size: 10px;
+
+		}
+		.form{
+			width: 70%;
+			margin: 0 auto;
+		}
+		.form #inpu1, #input2, #input3{
+			margin-top: 15px;
+			margin-right: 10px;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+
+			$(".fun1").click(function(){
+				alert("The paragraph is clicked.");
+
+			 });
+
+			$(".fun2").click(function(){
+				$("#para2").css('color','red');
+				$("#para2").css('font-size','30px');
+				$("#para2").css('background','#B2BEB5');
+			});
+
+			$(".fun3").click(function(){
+				$("#para3").hide('slow');
+			});
+
+			$(".fun4").dblclick(function(){
+  				$("#para4").css('background','blueviolet');
+			});
+
+			$(".fun5").hover(function(){
+				$("#para5").css('display','inline-block');
+
+			},
+			function(){
+				$("#para5").css('display','none');
+			}
+			);
+			$(".fun6").mouseenter(function(){
+				$("#para6").css('background','green');
+			});
+			$(".fun7").mouseleave(function(){
+				$("#para7").css('background','red');
+			});
+			$(".fun8").mousedown(function(){
+				$("#para8").css('background','yellow');
+			});
+			$(".fun9").mouseup(function(){
+				$("#para9").css('background','orange');
+			});
+			$("#input1, #input2, #input3").focus(function(){
+				$(this).css('background','tan');
+			});
+			$("#input1, #input2, #input3").blur(function(){
+				$(this).css('background','');
+			});
+			$("#input1, #input2, #input3").select(function(){
+				$(this).css('background','yellow');
+			});
+			$("#input3").change(function(){
+				$(this).css('background','pink');
+			});
+			$("#sform").submit(function(){
+				alert("Form Submitted.");
+			});
+		});
+		
+</script>
+</head>
+<body>
+
+	<div>
+		<ul>
+	<li><button class="fun1">Paragraph1</button></li>
+	<li><button class="fun2">Paragraph2</button></li>
+	<li><button class="fun3">Paragraph3</button></li>
+	<li><button class="fun4">Paragraph4</button></li>
+	<li><button class="fun5">Paragraph5</button></li>
+	<li><button class="fun6">Paragraph6</button></li>
+	<li><button class="fun7">Paragraph7</button></li>
+	<li><button class="fun8">Paragraph8</button></li>
+	<li><button class="fun9">Paragraph9</button></li>
+	<li><button class="fun10">Paragraph10</button></li>
+		</ul>
+	</div>
+
+	<div id="para1">
+	<p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para7">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="para10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="form">
+		<form id="sform">
+			<label>First Name</label>
+			<input type="text" name="fname" id="input1"><br>
+			<label>Last Name</label>
+			<input type="text" name="lname" id="input2"><br>
+			<label>Countary Name</label>
+			<select id="input3">
+				<option>Pakistan</option>
+				<option>India</option>
+				<option>Saudia Arabia</option>
+				<option>Bangladash</option>
+			</select><br>
+			<input type="submit" name="submit" id="submit">
+			<br>
+		</form>	
+	</div>
+
+</body>
+</html>

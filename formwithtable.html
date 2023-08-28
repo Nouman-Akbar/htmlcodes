@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form in table</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+
+		}
+		.main{
+			width: 100%;
+			font-family: fantasy;
+		}
+		.main table{
+			background-color: #999;
+			backface-visibility: 80%;
+			width: 70%;
+			margin: 0 auto;
+			border: 3px solid #f9a2e4;
+			border-collapse: collapse;
+		}
+		.main table tr{
+			font-size: 20px;
+		}
+		.main table tr th{
+			width: 100%;
+			border: 3px solid #f9a2e4;
+			font-size: 30px;
+			line-height: 60px;
+			color: lightgoldenrodyellow;
+		}
+		.one{
+			padding: 10px 15px 10px 15px;
+		}
+		.two{
+			width: 70%;
+			padding: 10px 20px 15px 20px;	
+		}
+		#btn{
+			padding: 10px 20px 15px 20px;
+			text-align: center;
+		}
+		label{
+			margin: 20px 165px 20px 65px;
+		}
+		input{
+			margin-top: 20px;
+			font-size: 20px;
+		}
+		input[type=text] , input[type=email] , input[type=button] , select, option{
+			width: 400px;
+			height: 40px;
+			text-align: center;
+			background-color: #f8f100;
+			color: #e9f;
+			border: 0;
+			outline: 2px dotted #fff;
+			padding: 4px 10px;
+			box-sizing: border-box;
+		}
+		input:focus{
+			text-align: left;
+			color: #fff;
+			padding: 20px;
+		}
+		textarea{
+			width: 400px;
+			height: 100px;
+			font-size: 20px;
+			text-align: center;
+		}
+		input [type=radio], input[type=checkbox] {
+		 	width: auto;
+		 	height: 20px;
+		 	margin-right: 5px;
+		}
+		button {
+			border: 1px solid  #e84;
+			border-radius: 10px;
+			background-color: #e84;
+			width: auto;
+			font-family: georgia;
+			margin: 55px 42%;
+			font-style: italic;
+			font-size: 21px;
+			padding: 10px 20px;
+			letter-spacing: 7px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<table>
+			<tr>
+				<th colspan="2">Create Your Account</th>
+
+			</tr>
+			<tr>
+				<td class="one"><label>Name:</label></td>
+				<td class="two"><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="one"><label>Email:</label></td>
+				<td class="two"><input type="email"></td>
+			</tr>	
+			<tr>
+				<td class="one"><label for="gender">Gender:</label></td>
+				<td class="two"><input type="radio" name="gender"> Male<br>
+				<input type="radio" name="gender"> Female</td>
+			</tr>
+			<tr>
+				<td class="one"><label>Province:</label></td>
+				<td class="two"><select>
+					<option>Punjab</option>
+					<option>KPK</option>
+					<option>Sindh</option>
+					<option>Balochistan</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td class="one"><label>Qualification:</label></td>
+				<td class="two">
+					<input type="checkbox"> Matric<br>
+					<input type="checkbox"> Inter<br>
+					<input type="checkbox"> Becholar<br>
+					<input type="checkbox"> Masters<br>
+				</td>
+			</tr>
+			<tr>
+				<td class="one"><label>Address:</label></td>
+				<td class="two">
+					<textarea placeholder="Write Your Address"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="button" >Submit</button>
+				</td>
+			</tr
+		</table>
+	</div>
+</body>
+</html>
